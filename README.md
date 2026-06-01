@@ -51,5 +51,5 @@ mvn verify    # pruebas + reporte de cobertura + validacion del minimo (>=60%)
 - `RouteConfigTest`: verifica que la ruta hacia el BFF este definida y apunte al puerto correcto.
 
 Reporte de cobertura (JaCoCo): `target/site/jacoco/index.html`. La regla `jacoco:check`
-falla el build si la cobertura baja del 60%. Cobertura actual: **66.7% (SonarCloud) / 71.4% (JaCoCo)**,
-por encima del minimo exigido (la diferencia se debe a la clase de arranque, que solo contiene el metodo main).
+falla el build si la cobertura baja del 60%. Cobertura actual: **71.4%** (coincide en JaCoCo y SonarCloud),
+por encima del minimo exigido. Quality Gate de SonarCloud: **Passed**.
