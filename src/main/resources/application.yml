@@ -1,0 +1,12 @@
+# API Gateway - punto de entrada unico del backend SmartLogix.
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+# URL del BFF al que el Gateway reenvia las peticiones del frontend.
+# El BFF escucha en el puerto 8088; el Gateway en el 8080 (entrada unica).
+bff:
+  url: http://localhost:8088
